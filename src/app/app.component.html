@@ -1,0 +1,41 @@
+<div class="container">
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">First Name</label>
+    <input type="text" class="form-control" [(ngModel)]="user.firstName" [ngModelOptions]="{standalone: true}">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Last Name</label>
+    <input type="text" class="form-control" [(ngModel)]="user.lastName" [ngModelOptions]="{standalone: true}">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email</label>
+    <input type="text" class="form-control" [(ngModel)]="user.email" [ngModelOptions]="{standalone: true}">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">password</label>
+    <input type="password" class="form-control" [(ngModel)]="user.password" [ngModelOptions]="{standalone: true}">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Mobile No</label>
+    <input type="number" class="form-control" [(ngModel)]="user.mobileNo" [ngModelOptions]="{standalone: true}">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Day</label>
+    <input type="number" class="form-control" [(ngModel)]="user.day" [ngModelOptions]="{standalone: true}">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Month</label>
+    <input type="number" class="form-control" [(ngModel)]="user.month" [ngModelOptions]="{standalone: true}">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Year</label>
+    <input type="number" class="form-control" [(ngModel)]="user.year" [ngModelOptions]="{standalone: true}">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Gender</label>
+    <input type="text" class="form-control" [(ngModel)]="user.gender" [ngModelOptions]="{standalone: true}">
+  </div>
+  <button (click)="submit()" class="btn btn-primary">Submit</button>
+</form>
+</div>
